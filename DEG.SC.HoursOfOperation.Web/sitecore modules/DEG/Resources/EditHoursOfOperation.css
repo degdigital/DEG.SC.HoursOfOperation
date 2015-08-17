@@ -1,0 +1,29 @@
+.form-inputs-row {
+	margin-bottom: 0.5rem;
+}
+
+.form-inputs-top-row {
+	margin-top: 1rem;
+}
+
+.form-input {
+	display: inline-block;
+	margin-right: 0.25rem;
+	vertical-align: top;
+}
+
+.form-input label {
+	padding-right: 0.25rem;
+}
+
+.form-input:first-child {
+	width: 9rem;
+}
+
+.form-input:first-child .hours-select {
+	float: right;
+}
+
+.raw-inputs {
+	display: none;
+}

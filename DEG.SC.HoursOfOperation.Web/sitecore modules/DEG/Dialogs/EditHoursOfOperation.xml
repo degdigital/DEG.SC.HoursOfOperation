@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+	<EditHoursOfOperation>
+		<FormDialog Header="Edit Hours of Operation" Text="Edit Hours of Operation" OKButton="OK">
+			<CodeBeside Type="DEG.SC.HoursOfOperation.Web.XmlControls.EditHoursOfOperation, DEG.SC.HoursOfOperation.Web" />
+			<Script Src="/sitecore/shell/Controls/Lib/jQuery/jquery.noconflict.js" Type="text/javascript" />
+			<Stylesheet Type="text/css" Src="/sitecore modules/DEG/Resources/EditHoursOfOperation.css" />
+			
+			<Border Padding="0 0 5 0" Height="100%">
+				<div class="hours-wrapper">
+					<div class="raw-inputs">
+						<Edit ID="OpenTwentyFourHoursRaw" Class="" Hidden="True" runat="server" />
+						<br />						
+						<Edit ID="MondayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="MondayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="MondayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+						<Edit ID="TuesdayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="TuesdayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="TuesdayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+						<Edit ID="WednesdayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="WednesdayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="WednesdayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+						<Edit ID="ThursdayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="ThursdayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="ThursdayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+						<Edit ID="FridayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="FridayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="FridayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+						<Edit ID="SaturdayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="SaturdayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="SaturdayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+						<Edit ID="SundayOpeningTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="SundayClosingTimeSelectRaw" Class="" Hidden="True" runat="server" />
+						<Edit ID="SundayClosedCheckboxRaw" Class="" Hidden="True" runat="server" />
+						<br />
+					</div>
+
+					<div class="container control">
+						<div class="form-inputs-row form-inputs-top-row">
+							<input class="openallhours-checkbox" data-target="OpenTwentyFourHoursRaw" type="checkbox" name="OpenTwentyFourHours" ID="OpenTwentyFourHours"  value="1" />
+							<label for="OpenTwentyFourHours">24 Hours</label>
+						</div>
+						<div class="form-inputs">							
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="MondayOpeningTimeSelect">Monday</label>
+									<select class="hours-select" data-target="MondayOpeningTimeSelectRaw" name="MondayOpeningTimeSelect" ID="MondayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="MondayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="MondayClosingTimeSelectRaw" name="MondayClosingTimeSelect" ID="MondayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="MondayClosedCheckbox" ID="MondayClosedCheckbox" data-target="MondayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="TuesdayOpeningTimeSelect">Tuesday</label>
+									<select class="hours-select" data-target="TuesdayOpeningTimeSelectRaw" name="TuesdayOpeningTimeSelect" ID="TuesdayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="TuesdayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="TuesdayClosingTimeSelectRaw" name="TuesdayClosingTimeSelect" ID="TuesdayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="TuesdayClosedCheckbox" ID="TuesdayClosedCheckbox" data-target="TuesdayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="WednesdayOpeningTimeSelect">Wednesday</label>
+									<select class="hours-select" data-target="WednesdayOpeningTimeSelectRaw" name="WednesdayOpeningTimeSelect" ID="WednesdayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="WednesdayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="WednesdayClosingTimeSelectRaw" name="WednesdayClosingTimeSelect" ID="WednesdayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="WednesdayClosedCheckbox" ID="WednesdayClosedCheckbox" data-target="WednesdayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="ThursdayOpeningTimeSelect">Thursday</label>
+									<select class="hours-select" data-target="ThursdayOpeningTimeSelectRaw" name="ThursdayOpeningTimeSelect" ID="ThursdayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="ThursdayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="ThursdayClosingTimeSelectRaw" name="ThursdayClosingTimeSelect" ID="ThursdayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="ThursdayClosedCheckbox" ID="ThursdayClosedCheckbox" data-target="ThursdayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="FridayOpeningTimeSelect">Friday</label>
+									<select class="hours-select" data-target="FridayOpeningTimeSelectRaw" name="FridayOpeningTimeSelect" ID="FridayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="FridayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="FridayClosingTimeSelectRaw" name="FridayClosingTimeSelect" ID="FridayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="FridayClosedCheckbox" ID="FridayClosedCheckbox" data-target="FridayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="SaturdayOpeningTimeSelect">Saturday</label>
+									<select class="hours-select" data-target="SaturdayOpeningTimeSelectRaw" name="SaturdayOpeningTimeSelect" ID="SaturdayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="SaturdayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="SaturdayClosingTimeSelectRaw" name="SaturdayClosingTimeSelect" ID="SaturdayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="SaturdayClosedCheckbox" ID="SaturdayClosedCheckbox" data-target="SaturdayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-inputs-row">
+								<div class="form-input">
+									<label for="SundayOpeningTimeSelect">Sunday</label>
+									<select class="hours-select" data-target="SundayOpeningTimeSelectRaw" name="SundayOpeningTimeSelect" ID="SundayOpeningTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<label for="SundayClosingTimeSelect">to</label>
+									<select class="hours-select" data-target="SundayClosingTimeSelectRaw" name="SundayClosingTimeSelect" ID="SundayClosingTimeSelect" runat="server">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="form-input">
+									<select class="closed-select" name="SundayClosedCheckbox" ID="SundayClosedCheckbox" data-target="SundayClosedCheckboxRaw">
+										<option value="0">Open</option>
+										<option value="1">Closed</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</Border>
+		</FormDialog>
+		<Script Src="/sitecore modules/DEG/Resources/EditHoursOfOperation.js" Type="text/javascript"/>
+	</EditHoursOfOperation>
+</control>
